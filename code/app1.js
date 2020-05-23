@@ -137,7 +137,7 @@ function removeAll(e) {
   tbody.innerHTML = "";
   storage.removeAllFromStorage();
   //total bill
-  total.innerHTML = 0;
+  total.innerHTML = "0";
   clearall.style.display = "none";
   filter.style.display = "none";
   ui.showAlert("List Is EMPTY Now", "success");

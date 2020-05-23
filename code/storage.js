@@ -47,13 +47,11 @@ class Storage {
     localStorage.removeItem("records");
   }
   totalBillAmount() {
-    let totalBill = null;
+    let totalBill = 0;
     const items = storage.getFromLocalStorage();
     items.forEach(function (item) {
       totalBill += item.bill;
     });
-    if (totalBill !== null) {
-      total.innerHTML = `${totalBill}`;
-    }
+    total.innerHTML = `${totalBill}`;
   }
 }
